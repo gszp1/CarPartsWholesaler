@@ -18,5 +18,9 @@ public class CarModel {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long Id;
 
+    @ManyToOne
+    @JoinColumn(name = "Id")
+    private Part part;
+
     private String Name;
 }
