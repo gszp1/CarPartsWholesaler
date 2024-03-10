@@ -9,7 +9,7 @@ public class Part {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long Id;
-    
+
 
 
 }
