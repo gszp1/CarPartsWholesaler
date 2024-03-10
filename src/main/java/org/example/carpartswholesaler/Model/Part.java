@@ -19,8 +19,10 @@ public class Part {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long Id;
-    
-    private Long CategoryId;
+
+    @ManyToOne
+    @JoinColumn(name="Id")
+    private PartCategory category;
 
     private String Name;
 
