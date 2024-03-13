@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="CarModels")
+@Table(name="car_models")
 public class CarModel {
 
     @Id

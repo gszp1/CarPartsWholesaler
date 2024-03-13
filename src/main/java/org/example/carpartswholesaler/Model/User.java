@@ -11,19 +11,21 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Users")
+@Table(name = "users")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long Id;
 
+    @Column(unique = true, nullable = false)
     private String Username;
 
     private String FirstName;
 
     private String Surname;
 
+    @Column(unique = true, nullable = false)
     private String Email;
 
     private String PhoneNumber;
